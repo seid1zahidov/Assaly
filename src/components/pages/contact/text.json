@@ -1,0 +1,18 @@
+{
+    "en": {
+        "title": "We’d love to hear from you",
+        "name_input_label": "My name is",
+        "name_input_placeholder": "your name",
+        "company_input_label": "From",
+        "company_input_placeholder": "COMPANY NAME OR WEBSITE",
+        "email_input_label": "Contact me back at",
+        "email_input_placeholder": "your email",
+        "services_input_label": "I’d like to discuss",
+        "info_input_label": "Tell us about your project",
+        "info_input_placeholder": "PITCH YOUR PROJECT IDEA (Scope, Timeline, Budget)",
+        "btn_text": "submit",
+        "btn_hover_text": "are you sure",
+        "visit": "visit us",
+        "contact": "contact"
+    }
+}

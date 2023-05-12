@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+// RozhaOne
+
+@font-face {
+    font-family: RozhaOneRegular;
+    src: url("./../../fonts/RozhaOne/RozhaOne-Regular.ttf");
+}
+
+// PublicSans
+
+@font-face {
+    font-family: PublicSans-Thin;
+    src: url("./../../fonts/PublicSans/PublicSans-Thin.ttf");
+}
+
+@font-face {
+    font-family: PublicSans-Light;
+    src: url("./../../fonts/PublicSans/PublicSans-Light.ttf");
+}
+
+@font-face {
+    font-family: PublicSans-Medium;
+    src: url("./../../fonts/PublicSans/PublicSans-Medium.ttf");
+}
+@font-face {
+    font-family: PublicSans-Regular;
+    src: url("./../../fonts/PublicSans/PublicSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: PublicSans-Semibold;
+    src: url("./../../fonts/PublicSans/PublicSans-SemiBold.ttf");
+}

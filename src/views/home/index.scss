@@ -1,0 +1,185 @@
+
+@import './../../assets/scss/utils/variables';
+
+.home-container {
+    background-color: transparent;
+    transition: 300ms all;
+    position: relative;
+
+    .mobile-mini {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .title {
+            flex: 1;
+            justify-content: center;
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100vh;
+        transition: top 1s ease-in-out 0s;
+        z-index: 3;
+
+        &.decrease {
+            top: 65vh;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .home-container {
+        background-color: transparent;
+        transition: 300ms all;
+    
+        .mobile-mini {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: 120px;
+    
+            .title {
+                flex: 1;
+                justify-content: center;
+                margin-bottom: 80px;
+            }
+        }
+
+        .mobile-navbar {
+            position: absolute;
+            top: 50vh;
+            transition: top 1s ease-in-out 0s;
+            z-index: 3;
+            width: 100%;
+    
+            &.decrease {
+                top: 294px;
+            }
+            
+            .mobile-menu-content {
+                width: 100vw;
+                height: 100vh;
+                background-color: $color-black;
+                padding: 12px 16px 0;
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: -100vh;
+                left: 0;
+                transition: all 500ms ease-in-out;
+                z-index: 99999;
+                opacity: 0;
+    
+                &.active {
+                    top: 0;
+                    opacity: 1;
+                }
+    
+                .menu-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 154px;
+                    position: relative;
+    
+                    .logo {
+                        position: absolute;
+                        transform: translate(-50%, 4px);
+                        left: 50%;
+                        a {
+                            width: 132px;
+                            height: 30px;
+                            display: inline-block;
+                
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+            
+                    .menu-opener, .close {
+                        font-family: PublicSans-Regular;
+                        font-style: normal;
+                        font-weight: 510;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: $color-white;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                    }
+                }
+    
+                .menu-inner {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex: 1;
+        
+                    .menu-items {
+                        li {
+                            margin-bottom: 16px;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+        
+                            a {
+                                font-family: PublicSans-Light;
+                                font-style: normal;
+                                font-weight: 274;
+                                font-size: 24px;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                                color: $color-white;
+                                opacity: 0.6;
+    
+        
+                                &.active {
+                                    opacity: 1;
+                                }
+                            }
+    
+                            svg {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+        
+                    .menu-footer {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 48px;
+                        
+                        .mobile-contact {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+            
+                            .phone, .email a {
+                                font-family: PublicSans-Regular;
+                                font-style: normal;
+                                font-weight: 510;
+                                font-size: 12px;
+                                line-height: 16px;
+                                text-transform: uppercase;
+                                color: $color-white;
+                                padding-bottom: 1px;
+                            }
+            
+                            .email a {
+                                border-bottom: 1px solid $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

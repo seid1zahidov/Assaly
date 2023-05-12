@@ -1,0 +1,24 @@
+{
+    "servicesData": {
+        "sub_services": [
+            {
+                "name": "CAMPAIGNS & CONTENT",
+                "subs": [
+                    "BRAND IDENTITY", "DESIGN SYSTEMS", "Copywriting & Art Direction", "Short-Format Video", "Social/Advertising", "Visual Design"
+                ]
+            },
+            {
+                "name": "Brand Development",
+                "subs": [
+                    "WEB DEVELOPMENT", "CREATIVE DEVELOPMENT", "ECOMMERCE", "Brand Guidelines", "Brand Assets", "Design Systems"
+                ]
+            },
+            {
+                "name": "Digital Experience",
+                "subs": [
+                    "WEBSITE DESIGN", "APP DESIGN", "USER EXPERIENCE", "USER INTERFACE", "DIGITAL EXPERIENCE", "WIREFRAMING", "PROTOTYPING"
+                ]
+            }
+        ]  
+    }
+}

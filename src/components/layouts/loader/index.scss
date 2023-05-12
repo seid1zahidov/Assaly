@@ -1,0 +1,97 @@
+@import './../../../assets/scss/reset/reset.scss';
+@import './../../../assets/scss/utils/variables.scss';
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-black;
+    z-index: 9999999999;
+    animation: inOut 300s forwards;
+    
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .progress-bar {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            .full {
+                height: 2px;
+                width: 100px;
+                background: rgba(255, 255, 255, 0.3);
+                position: relative;
+
+                .filled {
+                    width: 0;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: $color-white;
+                    animation: progress 2.5s forwards;
+                }
+            }
+
+            .percentage {
+                color: $color-white;
+                font-family: PublicSans-Medium;
+                font-style: normal;
+                font-weight: 510;
+                font-size: 12px;
+                line-height: 16px;
+                min-width: 30px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@keyframes inOut {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: 0;
+    }
+
+    80% {
+        top: 0;
+    }
+
+    100% {
+        top: -100vh;
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .loader {        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    }
+}

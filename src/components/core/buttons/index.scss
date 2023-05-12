@@ -1,0 +1,44 @@
+@import './../../../assets/scss/reset/reset.scss';
+@import './../../../assets/scss/utils/variables.scss';
+
+.round-button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: 300ms all;
+    transform: scale(1);
+    position: relative;
+
+    span {
+        font-family: PublicSans-Light, sans-serif;
+        font-style: normal;
+        font-weight: 510;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.scale {
+        transform: scale(2.2);
+
+        span {
+            min-width: 88px;
+            transform: scale(0.6);
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .round-button {
+        width: 54px;
+        height: 54px;
+    }
+}

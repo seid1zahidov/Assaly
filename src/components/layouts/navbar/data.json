@@ -1,0 +1,28 @@
+{
+    "en": {
+       "menu" : [
+            {
+                "name": "Homepage",
+                "url": "/"
+            },
+            {
+                "name": "Services",
+                "url": "/services/"
+            },
+            {
+                "name": "Case studies",
+                "url": "/case-studies/"
+            },
+            {
+                "name": "About",
+                "url": "/agency/"
+            }
+       ],
+       "built": "contact ",
+       "opener": "menu",
+       "lang": "lang",
+       "close": "close"
+    },
+    "phone_number": "+(86) 18521001313",
+    "email_address": "Hello@assaly.ch"
+ }

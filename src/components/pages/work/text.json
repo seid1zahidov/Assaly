@@ -1,0 +1,9 @@
+{
+    "en": {
+        "client": "client",
+        "service": "service",
+        "date": "date",
+        "next_btn_text": "View the next pproject",
+        "live_btn_text": "See live"
+    }
+}

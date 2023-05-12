@@ -1,0 +1,49 @@
+@import './../../../assets/scss/reset/reset';
+@import './../../../assets/scss/utils/variables';
+
+.checkbox-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding: 12px 10px;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 9px;
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            background-color: $color-light-gray;
+            border-radius: 50%;
+        }
+
+        span {
+            font-family: PublicSans-Regular;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color-black;
+        }
+
+        &.checked {
+            background-color: $color-yellow;
+
+            .circle {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    input {
+        display: none;
+    }
+}

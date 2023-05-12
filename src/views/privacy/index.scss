@@ -1,0 +1,65 @@
+@import './../../assets/scss/utils/variables';
+
+.privacy {
+    padding: 108px 80px 140px;
+
+    h1 {
+        font-family: RozhaOneRegular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 48px;
+        color: $color-black;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 68px;
+
+        div {
+            h4 {
+                font-family: PublicSans-Regular, sans-serif;
+                font-style: normal;
+                font-weight: 510;
+                font-size: 12px;
+                line-height: 16px;
+                color: rgba(3, 3, 15, 0.4);
+                margin-bottom: 8px;
+            }
+            
+            p {
+                font-family: PublicSans-Regular, sans-serif;
+                font-style: normal;
+                font-weight: 274;
+                font-size: 16px;
+                line-height: 22px;
+                color: $color-black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .privacy {
+        padding: 60px 16px;
+    
+        h1 {
+            font-size: 42px;
+            line-height: 42px;
+            margin-bottom: 32px;
+        }
+    
+        .body {
+            row-gap: 38px;
+    
+            div {
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

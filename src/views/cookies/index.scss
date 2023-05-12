@@ -1,0 +1,41 @@
+@import './../../assets/scss/utils/variables';
+
+.cookies {
+    padding: 108px 80px 140px;
+
+    h1 {
+        font-family: RozhaOneRegular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 48px;
+        color: $color-black;
+    }
+
+    .body {
+        font-family: PublicSans-Regular, sans-serif;
+        font-style: normal;
+        font-weight: 274;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-black;
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .cookies {
+        padding: 60px 16px;
+    
+        h1 {
+            font-size: 42px;
+            line-height: 42px;
+            margin-bottom: 32px;
+        }
+    
+        .body {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
